@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV Builder</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <h1>CV Builder</h1>
+        <form id="cv-form" onsubmit="generateCV(event)">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" required />
+          </div>
+          <div class="form-group">
+            <label for="address">Address:</label>
+            <textarea id="address" rows="3" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="experience">Work Experience:</label>
+            <textarea id="experience" rows="5" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="profile-picture">Profile Picture:</label>
+            <input type="file" id="profile-picture" accept="image/*" />
+          </div>
+          <div class="form-group education">
+            <label>Education:</label>
+            <input type="text" placeholder="Degree" />
+            <input type="text" placeholder="Institution" />
+            <input type="text" placeholder="Year" />
+          </div>
+          <button type="button" id="add-education">Add More Education</button>
+          <button type="submit">Generate CV</button>
+        </form>
+      </div>
+      <div class="container2">
+        <h1>Dynamic Resume</h1>
+        <div class="circle" id="profile-picture-preview"></div>
+        <div id="dynamic-form">
+          <div class="form-group">
+            <label for="dynamic-name"
+              >Name:<span id="dynamic-name-span"></span
+            ></label>
+          </div>
+          <div class="form-group">
+            <label for="dynamic-email"
+              >Email:<span id="dynamic-email-span"></span
+            ></label>
+          </div>
+          <div class="form-group">
+            <label for="dynamic-phone"
+              >Phone:<span id="dynamic-phone-span"></span
+            ></label>
+          </div>
+          <div class="form-group">
+            <label for="dynamic-address"
+              >Address:<span id="dynamic-address-span"></span
+            ></label>
+          </div>
+          <div class="form-group">
+            <label for="dynamic-experience"
+              >Work Experience:<span id="dynamic-experience-span"></span>
+            </label>
+          </div>
+          <div class="form-group">
+            <label for="dynamic-digree"
+              >digree:<span id="dynamic-digree-span"></span>
+            </label>
+          </div>
+          <div class="form-group">
+            <label for="dynamic-year"
+              >year:<span id="dynamic-year-span"></span>
+            </label>
+          </div>
+          <div class="form-group">
+            <label for="dynamic-institute"
+              >Institute:<span id="dynamic-institute-span"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff9c4;
+  color: #333;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ffeb3b;
+  border: 1px solid #fbc02d;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #f57f17;
+  margin-bottom: 20px;
+}
+
+form .form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: bold;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="file"], textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #fbc02d;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input[type="file"] {
+  border: none;
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #f57f17;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e65100;
+}
